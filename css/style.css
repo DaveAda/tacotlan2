@@ -14,6 +14,7 @@
 }
 html, body{
 	margin: 0;
+	overflow-x: hidden;
 	padding: 0;
 }
 
@@ -164,11 +165,27 @@ a{
 			max-width: 450px;
 		}
 /*INSTAFEED*/
+	::-webkit-scrollbar{
+		
+		background-color: #000;
+	}
+
+	::-webkit-scrollbar-thumb{
+		border-radius: 10px;
+		background-color: #000;
+		box-shadow: inset 0 0 6px rgb(86, 148, 163);
+	}
+	::-webkit-scrollbar-track{
+		border-radius: 10px;
+		background-color: #000;
+		box-shadow: inset 0 0 6px #000;
+	}
 	.insta{
 		align-items: center;
 		position: relative;
 		display: flex;
 		overflow-y: hidden;
+
 	}
 
 	.instagram{
@@ -177,6 +194,7 @@ a{
 		padding: 0;
 		position: relative;
 		margin: 0;
+		width: 75%;
 	}
 		#instafeed{
 			align-items: center;
@@ -184,7 +202,8 @@ a{
 			justify-content: space-around;
 			overflow-y: hidden;
 			padding: 40px 0;
-			max-width: 100%;
+			width: 100%;
+			scrollbar-color: dark;
 		}
 
 		#instafeed img{
@@ -195,6 +214,7 @@ a{
 			margin: 0 20px;
 			transition: ease-in-out;
 			transition-duration: .5s;
+			scrollbar-color: dark;
 		}
 
 		#instafeed img:hover{
@@ -209,24 +229,24 @@ a{
 			display: flex;
 			font-family: 'cooperbold';
 			height: 100%;
-			margin-right: 10px;
 			overflow-x: hidden;
 			position: absolute;
 			right: 0;
 			top: 0;
+			width: 25%;
 		}
 
 		.instaboxcontainer{
 			align-items: center;
 			background-image: linear-gradient(to bottom right, #000 50%, #56A88F);
-			border: 3px solid #fff;
 			display: flex;
 			flex-direction: column;
-			height: 80%;
+			height: 100%;
 			justify-content: center;
-			opacity: 0.9;		
+			opacity: 0.9;
+			overflow-x: hidden;		
 			text-align: center;
-			width: 300px;
+			width: 100%;
 		}
 
 		.instaboxcontainer img{
@@ -402,3 +422,4 @@ a{
 		justify-content: space-around;
 		padding: 20px 0;
 	}
+
