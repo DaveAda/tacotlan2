@@ -26,16 +26,14 @@ $('.ourstoryimages').slick({
 });
 
 $(document).ready(function(){
-    $(".demo").myig(
-        ins_id = 503807090, // your user_id
-        ins_count = 10, // Count of media to return
-        ins_token = '141970.467ede5.edbc9c37472d41b790e1db8948793f11' // your token
-    );
-});
-
-$(document).ready(function(){    
-    $(".myig_popup").fancybox({
-        openEffect : 'fade',
-        closeEffect : 'fade'
-    });
+var userFeed = new Instafeed({
+  get: 'user',
+  userId: '5826265013',
+  limit: 20,
+  resolution: 'standard_resolution',
+  accessToken: '5826265013.1677ed0.8c78148832734754920436acffd6dfb0',
+  sortBy: 'most-recent',
+  template: '<div class="gallery"><a href="https://www.instagram.com/tacotlantacos/?hl=en" title="Click to visit us on Instagram" target="_blank"><img src="{{image}}" alt="{{caption}}" class="img-fluid"/></a></div>',
+})
+userFeed.run();
 });

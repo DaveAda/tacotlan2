@@ -14,7 +14,6 @@
 			<div class="headerleft">
 				<ul>	
 					<img src="media/images/logos/header-logo-yellow.png"/>
-					<li><a href="#">ABOUT US</a></li>
 					<li><a href="#">MENU</a></li>
 					<li><a href="#">CATERING</a></li>
 					<li><a href="#">CONTACT</a></li>
@@ -24,7 +23,7 @@
 			<div class="headerright">
 				<ul>
 					<a href=""><i class="fab fa-facebook"></i></a>
-					<a href=""><i class="fab fa-instagram"></i></a>
+					<a href="https://www.instagram.com/tacotlantacos" target="_blank"><i class="fab fa-instagram"></i></a>
 					<a href=""><i class="fas fa-phone-square"></i></a>
 				</ul>
 			</div>
@@ -34,23 +33,14 @@
 <!--JUMBOTRON-->
 	<div class="jumbotron">
 		<div class="jumbocontainer"></div>
-					<div class="jumbologo">
+			<div class="jumbologo">
 				<img src="media/images/logos/tacotlan_logo_yellow.png"/>
 			</div>
+		</div>
 	</div>
 
 <!--ABOUT US-->
 	<div class="aboutus">
-		<div class="family">
-			<div class="familycontainer">
-				<div class="familycarousel">
-					<img src="media/images/family1.jpg"/>
-					<img src="media/images/family2.jpg"/>
-					<img src="media/images/family3.jpg"/>
-					<img src="media/images/family4.jpg"/>
-				</div>
-			</div>
-		</div>
 		<div class="aboutuscontainer">
 			<div class="aboutusinfo">
 				<div class="ourstoryinfo">
@@ -66,15 +56,83 @@
 				</div>
 			</div>
 		</div>
-	</div>
-<!--INSTAGRAM FEED-->
-	<div class="instafeed">
-		<div class="instafeedcontainer">
-
+		<div class="family">
+			<div class="familycontainer">
+				<div class="familycarousel">
+					<div id="instasize"><img src="media/images/family1.jpg"/></div>
+					<img src="media/images/family2.jpg"/>
+					<img src="media/images/family3.jpg"/>
+					<img src="media/images/family4.jpg"/>
+				</div>
+			</div>
 		</div>
 	</div>
+<!--INSTAGRAM FEED-->
+	<div class="insta">
+		<div class="instagram">
+			<div class="instafeed" id="instafeed"></div>
+		</div>
+		<div class="instabox">
+			<div class="instaboxcontainer">
+				<a href="#"><h2>Click to visit our<br><img src="media/images/instagram-script-white.png"/></h2><br>
+				<h2>Scroll for more <i class="far fa-arrow-alt-circle-right"></i></h2></a>
+			</div>
+		</div>
+	</div>
+<!--HOURS, LOCATION, and CONTACT-->
+	<div class="info">
+		<div class="infocontainer">
+			<div class="numbers">
+				<div class="numberscontainer">
+					<div class="location">
+						<h2>LOCATION</h2>
+						<p>4312 W Fullerton Ave, Chicago, IL 60639</p>
+						<p id="locationbottom"><a href="https://goo.gl/maps/K8HAqSVZQCn" target="_blank">click for directions <i class="fas fa-map-marker-alt"></i></a></p>
+					</div>
+					<div class="hours">
+						<h2>HOURS</h2>
+						<p>Monday: Closed</p>
+						<p>Tuesday: 11:00 a.m. - 9:00 p.m.</p>
+						<p>Wednesday: 11:00 a.m. - 9:00 p.m.</p>
+						<p>Thursday: 11:00 a.m. - 9:00 p.m.</p>
+						<p>Friday: 11:00 a.m. - 9:00 p.m.</p>
+						<p>Saturday: 9:00 a.m. - 9:00 p.m.</p>
+						<p>Sunday: 8:00 a.m. - 8:00 p.m.</p>
+					</div>
+				</div>
+			</div>
+			<div class="contactform">
+				<div class="contactformcontainer">
+					<h2>WHAT'S ON YOUR MIND?	</h2>
+					<form action="contactform.php" target="_blank" method="POST">
+			            <div class="contactnames">
+			              <div class="contactnamesbox">First Name *<br><input type="text" name="firstname" required><br></div>
+			              <div class="contactnamesbox">Last Name *<br><input type="text" name="lastname" required><br></div>
+			            </div>
+			            <span id="contacts">E-mail Address *<br><input type="email" name="email" required id="inputbox"><br>
+			            Subject *<br><input type="text" name="subject" required id="inputbox"><br>
+			            Message *<br><textarea name="message" class="form-control" id="inputbox"></textarea><br>
+			            <input type="submit" name="submit" value="Submit" id="contactsubmit">
+			            <input type="reset" name="reset" id="contactsubmit"></span>
+			          </form>
+				</div>
+			</div>
+		</div>
+	</div>
+<!--FOOTER-->
+	<footer class="footer">
+		<div class="footercontainer">
+			<img src="media/images/logos/footer-logo.png"/>
+			<p>&copy Tacotlan 2018</p>
+			<p><a href="https://goo.gl/maps/K8HAqSVZQCn" target="_blank">4312 W Fullerton Ave, Chicago, IL 60639</a></p>
+			<p><a href="tel:773-666-5259">773-666-5259</a></p>
+			<p><a href="mailto:jessicaperjes@gmail.com">E-Mail Tacotlan</a></p>
+			<p><a href="mailto:davealyinovich@gmail.com">site by DaveAda</a></p>
+		</div>
+	</footer>
 
 	<script src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/instafeed.min.js"></script>
 	<script src="js/slick.js"></script>
 	<script src="js/main.js"></script>
 </body>

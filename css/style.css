@@ -25,59 +25,59 @@ a{
 	text-decoration: none;
 }
 /*HEADER*/
-.header{
-	background-color: #000;
-	position: fixed;
-	font-family: 'rye';
-	width: 100%;
-	z-index: 10;
-}
+	.header{
+		background-color: #000;
+		position: fixed;
+		font-family: 'rye';
+		width: 100%;
+		z-index: 10;
+	}
 
-.header ul{
-	margin: 0;
-	padding: 0;
-}
+	.header ul{
+		margin: 0;
+		padding: 0;
+	}
 
-.headercontainer{
-	display: flex;
-	margin: 0 auto;
-	width: 95%;
-	}
-	/*HEADER LEFT*/
-	.headerleft{
-		width: 70%;
-	}
-	.headerleft ul{
-		align-items: center;
+	.headercontainer{
 		display: flex;
-		justify-content: space-between;
-	}
-	.header img{
-		height: 53.6px;
-		padding: 5px 0;
-		width: 80px;
-	}
-	.header a{
-		color: #fff;
-		font-size: 1.1em;
-	}
-	/*HEADER RIGHT*/
-	.headerright{
-		display: flex;
-		justify-content: flex-end;
-		margin-right: 0;
-		width: 30%;
-	}
-	.headerright ul{
-		align-items: center;
-		display: flex;
-		justify-content: space-between;
-	}
-	.header i{
-		color: rgba(86,168,143,1); 
-		font-size: 35px;
-		padding-left: 30px;
-	}
+		margin: 0 auto;
+		width: 95%;
+		}
+		/*HEADER LEFT*/
+		.headerleft{
+			width: 50%;
+		}
+		.headerleft ul{
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+		.header img{
+			height: 53.6px;
+			padding: 5px 0;
+			width: 80px;
+		}
+		.header a{
+			color: #fff;
+			font-size: 1.1em;
+		}
+		/*HEADER RIGHT*/
+		.headerright{
+			display: flex;
+			justify-content: flex-end;
+			margin-right: 0;
+			width: 50%;
+		}
+		.headerright ul{
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+		}
+		.header i{
+			color: rgba(86,168,143,1); 
+			font-size: 35px;
+			padding-left: 30px;
+		}
 /*JUMBOTRON*/
 	.jumbotron{
 		background: url("../media/images/painting-main-background.png") no-repeat;
@@ -115,23 +115,25 @@ a{
 	}
 	.familycarousel img{
 		display: block;
+		min-width: 100%;
 	}
 	/*ABOUT US INFO*/
 		.aboutuscontainer{
 			background-color: rgba(86,168,143,.9);
-			height: 100%;
-			margin: 0 auto;
-			padding: 30px 0;
+			display: flex;
+			height: 670px;
+			margin: 0 auto 0 auto;
+			padding: 25px 0 25px 0;
 			position: absolute;
-			top: 600px;
 			width: 100%;
 			z-index: 9;
+
 		}
 		.aboutusinfo{
 			display: flex;
-			height: 100%;
-			margin: 0 auto;
-			width: 95%;
+			justify-content: space-between;
+			margin: 0 auto 0 20px;
+			width: 100%;
 		}
 		.ourstoryinfo{
 			align-items: center;
@@ -155,12 +157,248 @@ a{
 
 	/*OUR STORY INFO*/
 		.ourstoryimages{
-			margin-top: 50px;
-			
 			text-align: center;
 			width: 50%;
 		}
-
 		.ourstoryimages img{
-			max-width: 65%;
+			max-width: 450px;
 		}
+/*INSTAFEED*/
+	.insta{
+		align-items: center;
+		position: relative;
+		display: flex;
+		overflow-y: hidden;
+	}
+
+	.instagram{
+		background-image: url("../media/images/painting4dark.png");
+		background-position: top center;
+		padding: 0;
+		position: relative;
+		margin: 0;
+	}
+		#instafeed{
+			align-items: center;
+			display: flex;
+			justify-content: space-around;
+			overflow-y: hidden;
+			padding: 40px 0;
+			max-width: 100%;
+		}
+
+		#instafeed img{
+			box-shadow: 5px 5px 5px #000;
+			display: block;
+			max-height: 320px;
+			max-width: 320px;
+			margin: 0 20px;
+			transition: ease-in-out;
+			transition-duration: .5s;
+		}
+
+		#instafeed img:hover{
+			box-shadow: 15px 15px 2px 1px #DDB237;
+				transform: translateY(-10px);
+		}
+
+		/*VISIT OUR INSTAGRAM*/
+		.instabox{
+			align-items: center;
+			bottom: 0;
+			display: flex;
+			font-family: 'cooperbold';
+			height: 100%;
+			margin-right: 10px;
+			overflow-x: hidden;
+			position: absolute;
+			right: 0;
+			top: 0;
+		}
+
+		.instaboxcontainer{
+			align-items: center;
+			background-image: linear-gradient(to bottom right, #000 50%, #56A88F);
+			border: 3px solid #fff;
+			display: flex;
+			flex-direction: column;
+			height: 80%;
+			justify-content: center;
+			opacity: 0.9;		
+			text-align: center;
+			width: 300px;
+		}
+
+		.instaboxcontainer img{
+			width: 200px;
+		}
+
+		.instaboxcontainer h2{
+			margin: 0;
+		}
+		.instabox a{
+			color: #fff;
+		}
+/*HOURS, LOCATION, and CONTACT*/
+	.info{
+		background-image: url("../media/images/painting2-dark.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: #fff;
+	}
+
+	.info h2{
+		font-family: 'rye';
+		margin: 0;
+		padding-bottom: 10px;
+	}
+
+	.info p{
+		font-family: 'cooper';
+		line-height: 1.8;
+		margin: 0 auto;
+		width: 60%;
+	}
+
+	.info a{
+		color: #fff;
+	}
+	.infocontainer{
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		padding: 20px 0;
+		text-align: center;
+		width: 90%;
+	}
+	/*NUMBERS*/
+		.numbers, .contact{
+			width: 50%;
+		}
+
+		.numbers{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			margin-right: 100px;
+		}
+
+		.hours{
+			padding-top: 20px;
+		}
+
+		#locationbottom{
+			border-bottom: 8px dotted #fff;
+			padding-bottom: 20px;
+		}
+
+		#locationbottom a{
+			transition: .5s ease-in-out;
+		}
+
+		#locationbottom a:hover{
+			color: #ddb237;
+		}
+/*CONTACT*/
+
+	.contactnames, #contacts{
+		color: #fff;
+		font-family: 'cooper';
+	}
+
+	.contact{
+		display: flex;
+		font-family: 'cooper';
+		font-size: 1.2rem;
+		margin: 150px auto;
+		width: 85%;
+	}
+
+	.contactinfo{
+		width: 50%;
+	}
+
+	.contactform{
+		width: 50%;
+	}
+
+	.contactform h2{
+		text-align: center;
+	}
+
+	.contactinfocontainer{
+		width: 70%;
+	}
+
+	.contactinfocontainer h1{
+		margin: 0;
+	}
+
+	.contactinfocontainer p{
+		line-height: 1.5;
+	}
+	.contactformcontainer{
+		margin: 0 auto;
+		text-align: left;
+	}
+
+	.contactnames{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.contactnamesbox{
+		display: flex;
+		flex-direction: column;
+		width: 48%;
+	}
+	.contactformcontainer form input, .contactformcontainer textarea{
+		background-color: rgba(86, 168, 143, 0.2);
+		color: #fff;
+		font-family: 'cooper';
+		font-size: 1.2rem;
+		margin-top: 5px;
+		padding: 10px 0 10px 10px;
+		width: 100%;
+	}
+	#inputbox{
+		margin-bottom: 20px;
+	}
+
+	#contactsubmit{
+		background-color: #000;
+		border: 2px solid rgba(128, 128, 128, 0.7);
+		margin: 0 auto;
+		padding-left: 0;
+		transition: .5s ease-in-out;
+		width: 150px;
+	}
+
+	#contactsubmit:hover{
+		background-color: rgba(221, 178, 55);
+		border: 2px solid rgba(221, 178, 55);
+		color: #fff;
+		cursor: pointer;
+	}
+/*FOOTER*/
+	.footer{
+		background-color: #000;
+		color: #fff;
+		font-family: 'cooper';
+	}
+
+	.footer img{
+		height: 5%;
+		width: 5%;
+	}
+
+	.footer a{
+		color: #fff;
+	}
+
+	.footercontainer{
+		display: flex;
+		justify-content: space-around;
+		padding: 20px 0;
+	}
