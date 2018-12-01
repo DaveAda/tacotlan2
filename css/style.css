@@ -14,8 +14,14 @@
 }
 html, body{
 	margin: 0;
-	padding: 0;
+	padding:26px 0 0 0;
+	box-sizing: border-box
 }
+
+*, *:after, *:before{
+	box-sizing: inherit;
+}
+
 
 li{
 	list-style: none;
@@ -31,6 +37,7 @@ a{
 		font-family: 'rye';
 		width: 100%;
 		z-index: 10;
+		top:0;
 	}
 
 	.header ul{
@@ -40,33 +47,33 @@ a{
 
 	.headercontainer{
 		display: flex;
+		justify-content: space-between;
 		margin: 0 auto;
-		width: 95%;
-		}
+		width: 100%;
+		align-items:center;
+	}
 		/*HEADER LEFT*/
 		.headerleft{
-			width: 50%;
+		padding:10px 10px;
+		display: flex;
 		}
 		.headerleft ul{
 			align-items: center;
 			display: flex;
-			justify-content: space-between;
 		}
 		.header img{
-			height: 53.6px;
-			padding: 5px 0;
+			margin: 10px 0;
 			width: 80px;
 		}
 		.header a{
 			color: #fff;
 			font-size: 1.1em;
+			padding:10px 20px;
+			display: block;
 		}
 		/*HEADER RIGHT*/
 		.headerright{
-			display: flex;
-			justify-content: flex-end;
 			margin-right: 0;
-			width: 50%;
 		}
 		.headerright ul{
 			align-items: center;
@@ -76,36 +83,28 @@ a{
 		.header i{
 			color: rgba(86,168,143,1); 
 			font-size: 35px;
-			padding-left: 30px;
 		}
 /*JUMBOTRON*/
 	.jumbotron{
 		background: url("../media/images/painting-main-background.png") no-repeat;
 		background-size: cover;
-		height: 90vh;
 	}
 	.jumbocontainer{
 		background-color: #000;
-		height: 90vh;
-		left: 0;
 		opacity: .8;
-		position: absolute;
-		top: 0;
 		width: 100%;
 	}
 
 	.jumbologo{
-		display: flex;
-		height: 400px;
-		justify-content: center;
-		margin-top: 100px;
-		position: absolute;
 		width: 100%;
+		max-width: 600px;
+		padding:60px 20px;
+		margin:0 auto;
 	}
 
 	.jumbologo img{
-		height: 402px;
-		width: 600px;
+		width:100%;
+		display: block;
 	}
 /*ABOUT US*/
 
@@ -401,4 +400,61 @@ a{
 		display: flex;
 		justify-content: space-around;
 		padding: 20px 0;
+	}
+
+
+
+
+
+	/*media query rules for nav*/
+	@media(max-width:860px){
+		.header img{
+			width:50px;
+		}
+		.header a {
+			font-size: 0.75em;
+		}
+
+		.header i{
+			font-size:20px;
+		}
+	}
+
+	@media(max-width:640px){
+
+		body{
+			padding-top:105px;
+		}
+
+		.headercontainer,
+		.headerleft,
+		.headerright{
+			display: block;
+		}
+
+		.headerleft{
+			margin:0 auto;
+		}
+
+		.headerleft ul,
+		.headerright ul{
+			justify-content: center;
+		}
+
+		.headerright{
+			position: absolute;
+			top:0;
+			right:0;
+		}
+		
+		.headerright a{
+			padding:5px 5px;
+		}
+
+		.header img{
+			margin:0px auto  10px;
+			display: block;
+			width:100%;
+			max-width:100px;
+		}
 	}
