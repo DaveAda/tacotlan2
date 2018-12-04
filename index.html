@@ -14,11 +14,54 @@
 			<div class="headerleft">
 				<ul>	
 					<img src="media/images/logos/header-logo-yellow.png"/>
-					<li><a href="#">MENU</a></li>
+					<i id="mobileheader" class="fas fa-bars"></i>
+					<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">MENU</a></li>
 					<li><a href="#">CATERING</a></li>
-					<li><a href="#">CONTACT</a></li>
-					<li><a href="#">DELIVERY</a></li>
+					<li><a href="#contactscroll">CONTACT</a></li>
+					<li class="deliveryhover"><a href="#">DELIVERY</a></li>
 				</ul>
+			</div>
+			<!--MOBILE DROPDOWN-->
+			<div class="mobiledropdown">
+				<div class="mobiledropdowncontainer">
+					<div class="mobiledropdownlist">
+						<ul>
+							<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">MENU</a></li>
+							<li><a href="#">CATERING</a></li>
+							<li><a href="#contactscroll">CONTACT</a></li>
+							<li id="deliverytouch"><a href="#">DELIVERY <i class="fas fa-caret-down"></i></a></li>
+							<!--DELIVERY ICONS-->
+							<div class="deliveryiconmobile" id="deliveryiconmobile">
+								<a href="https://www.doordash.com/store/tacotl-n-chicago-303952/" target="_blank" class="dicons"><img src="media/images/doordash-icon.png"/></a>
+								<a href="https://www.grubhub.com/restaurant/tacotln-4312-w-fullerton-ave-chicago/793794" target="_blank" class="dicons"><img src="media/images/grubhub-icon.png"/></a>
+								<a href="https://postmates.com/merchant/tacotlan-chicago" target="_blank" class="dicons"><img src="media/images/postmates-icon.png"/><a/>
+								<a href="https://www.ubereats.com/en-US/chicago/food-delivery/tacotlan/xqduDndiRHuEHGSSwVPT1g/" target="_blank" class="dicons"><img src="media/images/ubereats-icon.png"/><a/>
+							</div>
+							<li id="infotouch"><a href="#">INFO <i class="fas fa-caret-down"></i></a></li>
+							<!--INFO DROPDOWN-->
+							<!--MOBILE HOURS-->
+							<div class="mobilehours">
+								<h2 id="mhours">HOURS <i class="fas fa-caret-down"></i></h2>
+								<div class="mhours2">
+									<p>Monday: Closed</p>
+									<p>Tuesday: 11:00 a.m. - 9:00 p.m.</p>
+									<p>Wednesday: 11:00 a.m. - 9:00 p.m.</p>
+									<p>Thursday: 11:00 a.m. - 9:00 p.m.</p>
+									<p>Friday: 11:00 a.m. - 9:00 p.m.</p>
+									<p>Saturday: 9:00 a.m. - 9:00 p.m.</p>
+									<p>Sunday: 8:00 a.m. - 8:00 p.m.</p>
+							</div>
+							<!--MOBILE LOCATION-->
+							<div class="mobilelocation">
+								<h2 id="mloc">LOCATION <i class="fas fa-caret-down"></i></h2>
+								<div class="mloc2">
+									<p>4312 W Fullerton Ave. <br>Chicago, IL 60639</p>
+									<p><a href="https://goo.gl/maps/K8HAqSVZQCn" target="blank">Click for directions <i class="fas fa-map-marker-alt"></i></a></p>
+								</div>
+							</div>
+						</ul>
+					</div>
+				</div>
 			</div>
 			<div class="headerright">
 				<ul>
@@ -29,6 +72,18 @@
 			</div>
 		</div>
 	</header>
+	<!--DELIVERY DROPDOWN-->
+	<div class="dropdownmenu">
+		<div class="dropdownmenucontainer">
+			<div class="dropdownbox">
+					<a href="https://www.doordash.com/store/tacotl-n-chicago-303952/" target="_blank"><img src="media/images/doordash-icon.png"/></a>
+					<a href="https://www.grubhub.com/restaurant/tacotln-4312-w-fullerton-ave-chicago/793794" target="_blank"><img src="media/images/grubhub-icon.png"/></a>
+					<a href="https://postmates.com/merchant/tacotlan-chicago" target="_blank"><img src="media/images/postmates-icon.png"/><a/>
+					<a href="https://www.ubereats.com/en-US/chicago/food-delivery/tacotlan/xqduDndiRHuEHGSSwVPT1g/" target="_blank"><img src="media/images/ubereats-icon.png"/><a/>
+				
+			</div>
+		</div>
+	</div>
 
 <!--JUMBOTRON-->
 	<div class="jumbotron">
@@ -67,6 +122,15 @@
 			</div>
 		</div>
 	</div>
+	<div class="mobilestory">
+		<div class="mobilestorycontainer">
+			<h1>OUR STORY</h1>
+			<p>An authentic Mexican restaurant ran by a father and daughter. You will be treated you as if you are having a meal in our home as a welcome guest.  Once you try our tacos, you will continue to think about them all day and every day until you, eventually, come back for more.<br><br>We continually strive to provide the best dining experience available; therefore, should we need to improve in any area, please give us your feedback!
+			<br><br><br>
+			<h1 id="">OUR HISTORY</h1> 
+			<p>Established in 2018.  Everardo Macias, an immigrant from Jalisco who has resided in Chicago since the 70's, decided to open a Mexican restaurant in 2017. He put his blood, sweat and tears into renovating the restaurant into what it is today. With help from his daughter Jessica, including her modern vision of a tradition Mexican dining experience, Tacotlan was born.</p>
+		</div>
+	</div>
 <!--INSTAGRAM FEED-->
 	<div class="insta">
 		<div class="instagram">
@@ -101,7 +165,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="contactform">
+			<div class="contactform" id="contactscroll">
 				<div class="contactformcontainer">
 					<h2>WHAT'S ON YOUR MIND?	</h2>
 					<form action="contactform.php" target="_blank" method="POST">
@@ -127,7 +191,7 @@
 			<p><a href="https://goo.gl/maps/K8HAqSVZQCn" target="_blank">4312 W Fullerton Ave, Chicago, IL 60639</a></p>
 			<p><a href="tel:773-666-5259">773-666-5259</a></p>
 			<p><a href="mailto:jessicaperjes@gmail.com">E-Mail Tacotlan</a></p>
-			<p><a href="mailto:davealyinovich@gmail.com">site by DaveAda</a></p>
+			<p><a href="mailto:dave@daveada.com">site by DaveAda</a></p>
 		</div>
 	</footer>
 

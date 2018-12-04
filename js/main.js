@@ -29,7 +29,7 @@ $(document).ready(function(){
 var userFeed = new Instafeed({
   get: 'user',
   userId: '5826265013',
-  limit: 20,
+  limit: 30,
   resolution: 'standard_resolution',
   accessToken: '5826265013.1677ed0.8c78148832734754920436acffd6dfb0',
   sortBy: 'most-recent',
@@ -37,3 +37,73 @@ var userFeed = new Instafeed({
 })
 userFeed.run();
 });
+
+/*DELIVERY DROPDOWN*/
+$(document).ready(function(){
+  $('.dropdownmenucontainer').hide();
+});
+
+$(document).ready(function(){
+  $('.deliveryhover').hover(function(){
+    $('.dropdownmenucontainer').fadeIn();
+  });
+})
+$('.dropdownmenu').mouseleave(function(){
+  $('.dropdownmenucontainer').fadeOut();
+});
+
+
+/*MOBILE DELIVERY DROPDOWN*/
+$(document).ready(function(){
+  $('.deliveryiconmobile').hide();
+});
+
+$(document).ready(function(){
+  $('#deliverytouch').click(function(){
+    $('#deliveryiconmobile').toggle();
+  });
+})
+/*MOBILE DROPDOWN*/
+$(document).ready(function(){
+  $('.mobiledropdown').hide();
+});
+
+$(document).ready(function(){
+  $('#mobileheader').click(function(){
+    $('.mobiledropdown').toggle();
+  })
+});
+/*MOBILE INFO DROPDOWN*/
+  /*MOBILE HOURS DROPDOWN*/
+  $(document).ready(function(){
+  $('.mobilehours').hide();
+});
+
+$(document).ready(function(){
+  $('#infotouch').click(function(){
+    $('.mobilehours').toggle();
+  });
+})
+
+$(document).ready(function(){
+  $('.mhours2').hide();
+});
+
+$(document).ready(function(){
+  $('#mhours').click(function(){
+    $('.mhours2').toggle();
+  });
+})
+
+/*MOBILE LOCATION DROPDOWN*/
+$(document).ready(function(){
+  $('.mloc2').hide();
+});
+
+$(document).ready(function(){
+  $('#mloc').click(function(){
+    $('.mloc2').toggle();
+  })
+});
+
+

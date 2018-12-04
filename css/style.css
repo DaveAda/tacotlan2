@@ -25,13 +25,17 @@ li{
 a{
 	text-decoration: none;
 }
+
+.mobiledropdown, #mobileheader{
+	display: none;
+}
 /*HEADER*/
 	.header{
 		background-color: #000;
 		position: fixed;
 		font-family: 'rye';
 		width: 100%;
-		z-index: 10;
+		z-index: 2;
 	}
 
 	.header ul{
@@ -41,6 +45,7 @@ a{
 
 	.headercontainer{
 		display: flex;
+		justify-content: space-between;
 		margin: 0 auto;
 		width: 95%;
 		}
@@ -67,7 +72,7 @@ a{
 			display: flex;
 			justify-content: flex-end;
 			margin-right: 0;
-			width: 50%;
+			width: 20%;
 		}
 		.headerright ul{
 			align-items: center;
@@ -79,34 +84,50 @@ a{
 			font-size: 35px;
 			padding-left: 30px;
 		}
+
+	/*DELIVERY DROPDOWN*/
+	.dropdownmenu{
+		margin-left: 50%;
+	}
+	.dropdownmenucontainer{
+		position: fixed;			
+		width: 28.5%;
+		z-index: 2;
+	}
+
+	.dropdownbox{
+		align-items: center;
+		display: flex;	
+		justify-content: flex-end;
+	}
+
+	.dropdownmenu img{
+		display: block;
+		max-width: 60px;
+		padding: 2px 0 2px 20px;
+	}
+
 /*JUMBOTRON*/
 	.jumbotron{
 		background: url("../media/images/painting-main-background.png") no-repeat;
 		background-size: cover;
-		height: 90vh;
 	}
 	.jumbocontainer{
 		background-color: #000;
-		height: 90vh;
-		left: 0;
 		opacity: .8;
-		position: absolute;
-		top: 0;
 		width: 100%;
 	}
 
 	.jumbologo{
-		display: flex;
-		height: 400px;
-		justify-content: center;
-		margin-top: 100px;
-		position: absolute;
 		width: 100%;
+		max-width: 500px;
+		padding: 90px 0 70px 0;
+		margin:0 auto;
 	}
 
 	.jumbologo img{
-		height: 402px;
-		width: 600px;
+		width:100%;
+		display: block;
 	}
 /*ABOUT US*/
 
@@ -127,14 +148,14 @@ a{
 			padding: 25px 0 25px 0;
 			position: absolute;
 			width: 100%;
-			z-index: 9;
+			z-index: 1;
 
 		}
 		.aboutusinfo{
 			display: flex;
 			justify-content: space-between;
-			margin: 0 auto 0 20px;
-			width: 100%;
+			margin: 0 auto;
+			width: 95%;
 		}
 		.ourstoryinfo{
 			align-items: center;
@@ -146,7 +167,7 @@ a{
 		.ourstoryinfo h1{
 			color: #fff;
 			font-family: 'rye';
-			font-size: 2.8em;
+			font-size: 2.8rem;
 			margin: 0;
 			width: 80%;
 		}
@@ -165,27 +186,12 @@ a{
 			max-width: 450px;
 		}
 /*INSTAFEED*/
-	::-webkit-scrollbar{
-		
-		background-color: #000;
-	}
-
-	::-webkit-scrollbar-thumb{
-		border-radius: 10px;
-		background-color: #000;
-		box-shadow: inset 0 0 6px rgb(86, 148, 163);
-	}
-	::-webkit-scrollbar-track{
-		border-radius: 10px;
-		background-color: #000;
-		box-shadow: inset 0 0 6px #000;
-	}
 	.insta{
 		align-items: center;
 		position: relative;
 		display: flex;
 		overflow-y: hidden;
-
+		overflow-x: hidden;
 	}
 
 	.instagram{
@@ -288,7 +294,7 @@ a{
 		display: flex;
 		justify-content: space-between;
 		margin: 0 auto;
-		padding: 20px 0;
+		padding: 40px 0 10px 0;
 		text-align: center;
 		width: 90%;
 	}
@@ -423,3 +429,159 @@ a{
 		padding: 20px 0;
 	}
 
+/*media query rules for nav*/
+	@media(max-width:860px){
+		.header img{
+			height: 33px;
+			width:50px;
+		}
+		.header a {
+			font-size: 0.75em;
+		}
+
+		.header i{
+			font-size:20px;
+		}
+	}
+
+	@media(max-width:640px){
+
+		body{
+			padding-top:105px;
+		}
+
+		.headercontainer,
+		.headerleft,
+		.headerright{
+			display: block;
+		}
+
+		.headerleft{
+			margin:0 auto;
+		}
+
+		.headerleft ul,
+		.headerright ul{
+			justify-content: center;
+		}
+
+		.headerright{
+			position: absolute;
+			top:0;
+			right:0;
+		}
+		
+		.headerright a{
+			padding:5px 5px;
+		}
+
+		.headerleft img{
+			
+			
+			width:80%;
+			
+		}
+	}
+
+/***MOBILE PORTRAIT***/
+@media only screen and (max-device-width : 736px) {
+	.mobiledropdown, #mobileheader{
+		display: block;
+	}
+
+	.headerleft li, .headerleft img, .ourstoryinfo, .info{
+		display: none;
+	}
+	.headerleft{
+		display: flex;
+	}
+	.headerleft i{
+		align-items: center;
+		font-size: 65px;
+		padding: 0;
+	}
+
+
+	.headerright i{
+			font-size: 65px;
+			padding: 10px 0 10px 30px;
+		}
+		/*MOBILE DROPDOWN*/
+		.mobiledropdown{
+			background-color: #000;
+			border: 8px solid rgb(86,168,143);
+			box-shadow: 10px 10px 15px #000;
+			font-size: 45px;
+			left: 0;
+			padding: 20px 0 20px 20px;
+			position: absolute;
+			top: 85px;
+			width: 50%;
+		}
+
+		.deliveryiconmobile{
+			display: flex;
+			width: 100%;
+		}
+
+		.mobiledropdown img{
+			display: block;
+			height: 100%;
+			margin-right: 10px;
+			width: 80%;
+		}
+
+		.mobiledropdownlist li{
+			padding: 20px 0;
+		}
+		/*MOBILE HOURS*/
+		.mobilehours{
+			color: #fff;
+			padding-left: 20px;
+		}
+
+		.mobilehours h2,
+		.mobilelocation h2{
+			font-size: 40px;
+		}
+		.mobilehours p{
+			font-family: 'cooper';
+			font-size: 30px;
+		}
+
+		.mobiledropdown i{
+			font-size: 40px;
+			padding: 0;
+		}
+	/*ABOUT US*/
+	.ourstoryimages{
+		width: 100%;
+	}
+
+	.mobilestory{
+		background-image: url("../media/images/painting3dark.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	.mobilestorycontainer{
+		border: 8px dotted #fff;
+		padding: 20px 0;
+		margin: 0 20px;
+	}
+
+	.mobilestory h1{
+		color: #fff;
+		font-family: 'rye';
+		margin: 0;
+		padding-bottom: 20px;
+	}
+	.mobilestory p{
+		color: #fff;
+		font-family: 'cooper';
+		margin: 0 auto;
+		width: 90%;
+	}
+}
