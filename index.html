@@ -28,7 +28,7 @@
 						<ul>
 							<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">MENU</a></li>
 							<li><a href="#">CATERING</a></li>
-							<li><a href="#contactscroll">CONTACT</a></li>
+							<li id="mobilecontactbutton"><a href="#">CONTACT <i class="fas fa-caret-down"></i></a></li>
 							<li id="deliverytouch"><a href="#">DELIVERY <i class="fas fa-caret-down"></i></a></li>
 							<!--DELIVERY ICONS-->
 							<div class="deliveryiconmobile" id="deliveryiconmobile">
@@ -60,6 +60,23 @@
 								</div>
 							</div>
 						</ul>
+					</div>
+				</div>
+				<!--MOBILE CONTACT FORM-->
+				<div class="contactform" id="mobilecontact">
+					<div class="contactformcontainer">
+						<h2>WHAT'S ON YOUR MIND?</h2>
+						<form action="contactform.php" target="_blank" method="POST">
+				            <div class="contactnames">
+				              <div class="contactnamesbox">First Name *<br><input type="text" name="firstname" required><br></div>
+				              <div class="contactnamesbox">Last Name *<br><input type="text" name="lastname" required><br></div>
+				            </div>
+				            <span id="contacts">E-mail Address *<br><input type="email" name="email" required id="inputbox"><br>
+				            Subject *<br><input type="text" name="subject" required id="inputbox"><br>
+				            Message *<br><textarea name="message" class="form-control" id="inputbox"></textarea><br>
+				            <input type="submit" name="submit" value="Submit" id="contactsubmit">
+				            <input type="reset" name="reset" id="contactsubmit"></span>
+				          </form>
 					</div>
 				</div>
 			</div>

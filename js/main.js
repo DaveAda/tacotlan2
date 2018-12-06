@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#deliverytouch').click(function(){
-    $('#deliveryiconmobile').toggle();
+    $('#deliveryiconmobile').slideToggle();
   });
 })
 /*MOBILE DROPDOWN*/
@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#mobileheader').click(function(){
-    $('.mobiledropdown').toggle();
+    $('.mobiledropdown').slideToggle();
   })
 });
 /*MOBILE INFO DROPDOWN*/
@@ -81,7 +81,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#infotouch').click(function(){
-    $('.mobilehours').toggle();
+    $('.mobilehours').slideToggle();
   });
 })
 
@@ -91,7 +91,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#mhours').click(function(){
-    $('.mhours2').toggle();
+    $('.mhours2').slideToggle();
   });
 })
 
@@ -102,8 +102,24 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('#mloc').click(function(){
-    $('.mloc2').toggle();
+    $('.mloc2').slideToggle();
+  })
+});
+/*MOBILE CONTACT*/
+$(document).ready(function(){
+  $('#mobilecontact').hide();
+});
+
+$(document).ready(function(){
+  $('#mobilecontactbutton').click(function(){
+    $('#mobilecontact').toggle();
   })
 });
 
+$('#mobilecontactbutton').click(function() {
+  $('.mobiledropdown').toggleClass('mobile96');
+});
 
+$('#mobilecontactbutton').click(function() {
+  $('.mobiledropdowncontainer').toggleClass('mobile50');
+});
