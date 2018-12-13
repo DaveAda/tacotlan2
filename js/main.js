@@ -39,9 +39,7 @@ userFeed.run();
 });
 
 /*DELIVERY DROPDOWN*/
-$(document).ready(function(){
-  $('.dropdownmenucontainer').hide();
-});
+
 
 $(document).ready(function(){
   $('.deliveryhover').hover(function(){
@@ -54,6 +52,7 @@ $('.dropdownmenu').mouseleave(function(){
 
 
 /*MOBILE DELIVERY DROPDOWN*/
+/*
 $(document).ready(function(){
   $('.deliveryiconmobile').hide();
 });
@@ -63,7 +62,9 @@ $(document).ready(function(){
     $('#deliveryiconmobile').slideToggle();
   });
 })
+*/
 /*MOBILE DROPDOWN*/
+/*
 $(document).ready(function(){
   $('.mobiledropdown').hide();
 });
@@ -73,8 +74,10 @@ $(document).ready(function(){
     $('.mobiledropdown').slideToggle();
   })
 });
+*/
 /*MOBILE INFO DROPDOWN*/
   /*MOBILE HOURS DROPDOWN*/
+  /*
   $(document).ready(function(){
   $('.mobilehours').hide();
 });
@@ -94,8 +97,9 @@ $(document).ready(function(){
     $('.mhours2').slideToggle();
   });
 })
-
+*/
 /*MOBILE LOCATION DROPDOWN*/
+/*
 $(document).ready(function(){
   $('.mloc2').hide();
 });
@@ -105,7 +109,9 @@ $(document).ready(function(){
     $('.mloc2').slideToggle();
   })
 });
+*/
 /*MOBILE CONTACT*/
+/*
 $(document).ready(function(){
   $('#mobilecontact').hide();
 });
@@ -123,3 +129,91 @@ $('#mobilecontactbutton').click(function() {
 $('#mobilecontactbutton').click(function() {
   $('.mobiledropdowncontainer').toggleClass('mobile50');
 });
+*/
+/*CONTACT / CATERING TOGGLE*/
+$(document).ready(function(){
+
+        var $contactform = $('.contactform');
+        var $cateringform = $('.cateringform');
+        var $contacttitle = $('.contacttitle');
+        var $cateringtitle = $('.cateringtitle');
+        var $contactnames = $('.contactnames');
+        var $cateringnames = $('.cateringnames');
+        var $mcontacttab = $('.mcontacttab');
+        var $mcateringtab = $('.mcateringtab');
+        var $mcontact = $('.mcontact');
+        var $mcatering = $('.mcatering');
+        var $mcontainer = $('.mcontainer');
+        var $fullwidth = $('.fullwidth');
+        var $mcontactli = $('.mcontactli');
+        var $msubmenu = $('.msubmenu');
+        var $mdeliveryli = $('.mdeliveryli');
+        var $mdelivery = $('.mdelivery');
+        var $minfo = $('.minfo');
+        var $minfoli = $('.minfoli');
+        var $mdropdown = $('.mdropdown');
+        var $mobileheader = $('#mobileheader');
+
+
+        $mobileheader.click(function(){
+          $mdropdown.slideToggle();
+        });
+        $contacttitle.click(function(){
+          $contactform.show();
+          $cateringform.hide();
+        });
+        $cateringtitle.click(function(){
+          $cateringform.show();
+          $contactform.hide();
+        });
+        $mcontacttab.click(function(){
+          $mcontact.fadeIn();
+          $mcontainer.addClass('fullwidth','slow');
+          $mcatering.hide();
+          $minfo.hide();
+        });
+        $mcateringtab.click(function(){
+          $mcatering.fadeIn();
+          $mcontainer.addClass('fullwidth','slow');
+          $mcontact.hide();
+          $minfo.hide();
+        });
+        $mcontactli.click(function(){
+          $mcontact.hide();
+          $mcatering.hide();
+          $mcontainer.removeClass('fullwidth', 'slow');
+          $msubmenu.slideToggle();
+          $minfo.hide();
+        });
+        $mdeliveryli.click(function(){
+          $mdelivery.slideToggle();
+        });
+        $minfoli.click(function(){
+          $minfo.fadeIn();
+          $mcontainer.addClass('fullwidth');
+          $mcontact.hide();
+          $mcatering.hide();
+        });
+    });
+
+
+        /*var $header = $('.header');
+        var $bios = $('.bios');
+        var $zurich = $('.zurich');
+        var $barrington = $('.barrington');
+        var $zurichclick = $('.zurichclick');
+        var $barringtonclick = $('.barringtonclick');
+
+        $zurichclick.click(function(){
+          $zurich.slideToggle();
+          $barrington.slideUp();
+        });
+        $barringtonclick.click(function(){
+          $barrington.slideToggle();
+          $zurich.slideUp();
+        });
+        $header.mouseleave(function(){
+          $zurich.fadeOut();
+          $barrington.fadeOut();
+        });
+    });*/

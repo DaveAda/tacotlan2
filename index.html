@@ -13,70 +13,155 @@
 		<div class="headercontainer">
 			<div class="headerleft">
 				<ul>	
-					<img src="media/images/logos/header-logo-yellow.png"/>
+					<a href="index.html"><img src="media/images/logos/header-logo-yellow.png"/></a>
 					<i id="mobileheader" class="fas fa-bars"></i>
-					<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">MENU</a></li>
-					<li><a href="#">CATERING</a></li>
-					<li><a href="#contactscroll">CONTACT</a></li>
+					<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">DINE-IN MENU</a></li>
+					<li><a href="media/images/Catering-Menu.png" target="_blank">CATERING MENU</a></li>
+					<li><a href="#info">CONTACT</a></li>
 					<li class="deliveryhover"><a href="#">DELIVERY</a></li>
 				</ul>
 			</div>
-			<!--MOBILE DROPDOWN-->
-			<div class="mobiledropdown">
-				<div class="mobiledropdowncontainer">
-					<div class="mobiledropdownlist">
+<!--MOBILE DROPDOWN-->
+			<div class="mdropdown">
+				<div class="mcontainer">
+					<div class="mlist">
 						<ul>
-							<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">MENU</a></li>
-							<li><a href="#">CATERING</a></li>
-							<li id="mobilecontactbutton"><a href="#">CONTACT <i class="fas fa-caret-down"></i></a></li>
-							<li id="deliverytouch"><a href="#">DELIVERY <i class="fas fa-caret-down"></i></a></li>
-							<!--DELIVERY ICONS-->
-							<div class="deliveryiconmobile" id="deliveryiconmobile">
-								<a href="https://www.doordash.com/store/tacotl-n-chicago-303952/" target="_blank" class="dicons"><img src="media/images/doordash-icon.png"/></a>
-								<a href="https://www.grubhub.com/restaurant/tacotln-4312-w-fullerton-ave-chicago/793794" target="_blank" class="dicons"><img src="media/images/grubhub-icon.png"/></a>
-								<a href="https://postmates.com/merchant/tacotlan-chicago" target="_blank" class="dicons"><img src="media/images/postmates-icon.png"/><a/>
-								<a href="https://www.ubereats.com/en-US/chicago/food-delivery/tacotlan/xqduDndiRHuEHGSSwVPT1g/" target="_blank" class="dicons"><img src="media/images/ubereats-icon.png"/><a/>
-							</div>
-							<li id="infotouch"><a href="#">INFO <i class="fas fa-caret-down"></i></a></li>
-							<!--INFO DROPDOWN-->
-							<!--MOBILE HOURS-->
-							<div class="mobilehours">
-								<h2 id="mhours">HOURS <i class="fas fa-caret-down"></i></h2>
-								<div class="mhours2">
-									<p>Monday: Closed</p>
-									<p>Tuesday: 11:00 a.m. - 9:00 p.m.</p>
-									<p>Wednesday: 11:00 a.m. - 9:00 p.m.</p>
-									<p>Thursday: 11:00 a.m. - 9:00 p.m.</p>
-									<p>Friday: 11:00 a.m. - 9:00 p.m.</p>
-									<p>Saturday: 9:00 a.m. - 9:00 p.m.</p>
-									<p>Sunday: 8:00 a.m. - 8:00 p.m.</p>
-							</div>
-							<!--MOBILE LOCATION-->
-							<div class="mobilelocation">
-								<h2 id="mloc">LOCATION <i class="fas fa-caret-down"></i></h2>
-								<div class="mloc2">
-									<p>4312 W Fullerton Ave. <br>Chicago, IL 60639</p>
-									<p><a href="https://goo.gl/maps/K8HAqSVZQCn" target="blank">Click for directions <i class="fas fa-map-marker-alt"></i></a></p>
+							<li><a href="media/images/Tacotlan-Menu.pdf" target="_blank">DINE-IN<br>MENU</a></li>
+							<li><a href="media/images/Catering-Menu.png" target="_blank">CATERING<br>MENU</a></li>
+							<li class="mcontactli"><a>CONTACT</a><i class="fas fa-caret-down"></i></li>
+								<!--CONTACT SUB MENU-->
+								<li class="msubmenu"><a class="msubmenu mcontacttab">CONTACT US</a></li>
+								<li class="msubmenu"><a class="msubmenu mcateringtab">CATERING</a></li>
+							<li class="mdeliveryli"><a href="#">DELIVERY</a><i class="fas fa-caret-down"></i></li>
+								<!--DELIVERY SUB MENU-->
+								<div class="mdelivery">
+									<div class="mdeliverycontainer">
+										<div class="mdelrow">
+											<a href="https://www.doordash.com/store/tacotl-n-chicago-303952/" target="_blank"><img src="media/images/doordash-icon.png"/></a>
+											<a href="https://www.grubhub.com/restaurant/tacotln-4312-w-fullerton-ave-chicago/793794" target="_blank"><img src="media/images/grubhub-icon.png"/></a>
+										</div>
+										<div class="mdelrow">
+											<a href="https://postmates.com/merchant/tacotlan-chicago" target="_blank"><img src="media/images/postmates-icon.png"/><a/>
+											<a href="https://www.ubereats.com/en-US/chicago/food-delivery/tacotlan/xqduDndiRHuEHGSSwVPT1g/" target="_blank"><img src="media/images/ubereats-icon.png"/><a/>
+										</div>
+									</div>
 								</div>
-							</div>
+							<li class="minfoli"><a href="#">INFO</a><i class="fas fa-caret-down"></i></li>
 						</ul>
 					</div>
-				</div>
-				<!--MOBILE CONTACT FORM-->
-				<div class="contactform" id="mobilecontact">
-					<div class="contactformcontainer">
-						<h2>WHAT'S ON YOUR MIND?</h2>
-						<form action="contactform.php" target="_blank" method="POST">
-				            <div class="contactnames">
-				              <div class="contactnamesbox">First Name *<br><input type="text" name="firstname" required><br></div>
-				              <div class="contactnamesbox">Last Name *<br><input type="text" name="lastname" required><br></div>
-				            </div>
-				            <span id="contacts">E-mail Address *<br><input type="email" name="email" required id="inputbox"><br>
-				            Subject *<br><input type="text" name="subject" required id="inputbox"><br>
-				            Message *<br><textarea name="message" class="form-control" id="inputbox"></textarea><br>
-				            <input type="submit" name="submit" value="Submit" id="contactsubmit">
-				            <input type="reset" name="reset" id="contactsubmit"></span>
-				          </form>
+					<!--MOBILE CONTACT-->
+					<div class="minfo">
+						<div class="minfocontainer">
+							<div class="mlocation">
+								<p>4312 W Fullerton Ave, Chicago, IL 60639</p>
+								<p id="mlocationbottom"><a href="https://goo.gl/maps/K8HAqSVZQCn" target="_blank">click for directions <i class="fas fa-map-marker-alt"></i></a></p>
+							</div>
+							<div class="mhours">
+								<p>Mon: Closed</p>
+								<p>Tues: 11am - 9pm</p>
+								<p>Weds: 11am - 9pm</p>
+								<p>Thurs: 11am - 9pm</p>
+								<p>Fri: 11am - 9pm</p>
+								<p>Sat: 9am - 9pm</p>
+								<p>Sun: 8am - 8pm</p>
+							</div>
+						</div>
+					</div>
+					<div class="mcontact">
+						<div class="mcontactcontainer">
+							<form action="contactform.php" target="_blank" method="POST">
+					            
+					            <div class="mcontactnames">
+					            	<div class="mcontactnamesbox"><p>First Name *</p>
+					            		<div class="minputs"><input type="text" name="firstname" required>
+					            		</div>
+					            	</div>
+					              	<div class="mcontactnamesbox"><p>Last Name *</p>
+					              		<div class="minputs"><input type="text" name="lastname" required>
+					              		</div>
+					              	</div>
+					            </div>
+
+					            <div class="mcontactnames">
+					            	<div class="mcontactnamesbox"><p>E-mail Address *</p>
+					            		<div class="minputs"><input type="email" name="email" required class="mwipe" id="inputbox">
+					            		</div>
+					            	</div>
+					              	<div class="mcontactnamesbox"><p>Phone</p>
+					              		<div class="minputs"><input type="text" name="lastname" optional>
+					              		</div>
+					              	</div>
+					            </div>
+
+					            <div id="mmessagearea" class="mcontactnames">
+				            		<div class="mcontactnamesbox"><p>Message *</p>
+				            			<div id="mmessagearea" class="minputs"><textarea name="message" class="form-control" id="minputbox"></textarea>
+				            			</div>
+				            		</div>
+				            	</div>
+					            <div id="mcateringsubmit" class="mcontactnames">
+					            	<button id="mcateringsubmit1"><input type="submit" name="submit" value="Submit" id="mcateringsubmitbutton"></button>
+					            	<button><input type="reset" name="reset" id="mcateringsubmitbutton"></button>
+				            	</div>
+					        </form>
+						</div>
+				    </div>
+				    <!--MOBILE CATERING FORM-->
+				    <div class="mcatering">
+						<div class="mcateringcontainer">
+							<form action="cateringform.php" target="_blank" method="POST">
+					            <div class="mcateringnames">
+					             	<div class="mcateringnamesbox"><p>First Name *</p>
+					             		<div class="minputs"><input type="text" name="firstname" required>
+					             		</div>
+					             	</div>
+					              	<div class="mcateringnamesbox"><p>Last Name *</p>
+					              		<div class="minputs"><input type="text" name="lastname" required>
+					              		</div>
+					              	</div>
+					            </div>
+					            <div class="mcateringnames">
+				            		<div class="mcateringnamesbox"><p>Company (if applicable)</p>
+				            			<div class="minputs"><input type="text" name="company" optional>
+				            			</div>
+				            		</div>
+			            			<div class="mcateringnamesbox"><p>E-mail Address *</p>
+			            				<div class="minputs"><input type="email" name="email" required>
+			            			</div>
+		            				</div>
+			            		</div>
+				            	<div class="mcateringnames">
+				            		<div class="mcateringnamesbox"><p>Phone *</p>
+				            			<div class="minputs"><input type="tel" name "phone" required>
+				            			</div>
+				            		</div>
+				            		<div class="mcateringnamesbox"><p>Date *</p>
+				            			<div id="mdatevalue" class="minputs"><input type="text" name="date" placeholder="Month/Day/Year" required>
+				            			</div>
+				            		</div>
+				            	</div>
+				            	<div class="mcateringnames">
+				            		<div class="mcateringnamesbox"><p>Time *</p>
+				            			<div class="minputs"><input type="text" name="time" required>
+				            			</div>
+				            		</div>
+				            		<div class="mcateringnamesbox"><p>Estimated Guest Count *</p>
+				            			<div class="minputs"><input type="number" name="guestcount" required><br>
+				            			</div>
+				            		</div>
+				            	</div>
+				            	<div id="mmessagearea" class="mcateringnames">
+				            		<div class="mcateringnamesbox"><p>Message *</p>
+				            			<div id="mmessagearea" class="inputs"><textarea name="message" class="form-control" id="minputbox1"></textarea>
+				            			</div>
+				            		</div>
+				            	</div>
+					            <div id="mcateringsubmit" class="mcateringnames">
+					            	<button id="mcateringsubmit1"><input type="submit" name="submit" value="Submit" id="mcateringsubmitbutton"></button>
+					            	<button><input type="reset" name="reset" id="mcateringsubmitbutton"></button>
+				            	</div>
+					        </form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -89,6 +174,9 @@
 			</div>
 		</div>
 	</header>
+
+	<!--MOBILE CONTACT FORM-->
+
 	<!--DELIVERY DROPDOWN-->
 	<div class="dropdownmenu">
 		<div class="dropdownmenucontainer">
@@ -116,11 +204,12 @@
 		<div class="aboutuscontainer">
 			<div class="aboutusinfo">
 				<div class="ourstoryinfo">
+					<div class="story">
 					<h1>OUR STORY</h1>
-					<p>An authentic Mexican restaurant ran by a father and daughter. You will be treated you as if you are having a meal in our home as a welcome guest.  Once you try our tacos, you will continue to think about them all day and every day until you, eventually, come back for more.<br><br>We continually strive to provide the best dining experience available; therefore, should we need to improve in any area, please give us your feedback!
-					<br><br><br>
+					<p>An authentic Mexican restaurant ran by a father and daughter. You will be treated you as if you are having a meal in our home as a welcome guest.  Once you try our tacos, you will continue to think about them all day and every day until you, eventually, come back for more.<br><br>We continually strive to provide the best dining experience available; therefore, should we need to improve in any area, please give us your feedback!</div>
+					<div class="story">
 					<h1 id="historytop">OUR HISTORY</h1> 
-					<p>Established in 2018.  Everardo Macias, an immigrant from Jalisco who has resided in Chicago since the 70's, decided to open a Mexican restaurant in 2017. He put his blood, sweat and tears into renovating the restaurant into what it is today. With help from his daughter Jessica, including her modern vision of a tradition Mexican dining experience, Tacotlan was born.</p>
+					<p>Established in 2018.  Everardo Macias, an immigrant from Jalisco who has resided in Chicago since the 70's, decided to open a Mexican restaurant in 2017. He put his blood, sweat and tears into renovating the restaurant into what it is today. With help from his daughter Jessica, including her modern vision of a tradition Mexican dining experience, Tacotlan was born.</p></div>
 				</div>
 				<div class="ourstoryimages">
 					<img src="media/images/painting1.png"/>
@@ -161,7 +250,7 @@
 		</div>
 	</div>
 <!--HOURS, LOCATION, and CONTACT-->
-	<div class="info">
+	<div id="info" class="info">
 		<div class="infocontainer">
 			<div class="numbers">
 				<div class="numberscontainer">
@@ -182,20 +271,120 @@
 					</div>
 				</div>
 			</div>
+			<!--CONTACT FORM-->
 			<div class="contactform" id="contactscroll">
 				<div class="contactformcontainer">
-					<h2>WHAT'S ON YOUR MIND?	</h2>
+					<h2 id="contactspanish">¿QUE TE PASA CALABAZA?</h2>
+					<p id="contactenglish">WHAT'S ON YOUR MIND?</p>
+					<div class="toggletitles">
+	            		<div class="titles2">
+	            			<h3 id="contacttoggle" class="contacttitle">CONTACT US</h3>
+	            			<h3 id="cateringtoggle" class="cateringtitle">CATERING INQUIRY</h3>
+	            		</div>
+	            	</div>
 					<form action="contactform.php" target="_blank" method="POST">
+			            
 			            <div class="contactnames">
-			              <div class="contactnamesbox">First Name *<br><input type="text" name="firstname" required><br></div>
-			              <div class="contactnamesbox">Last Name *<br><input type="text" name="lastname" required><br></div>
+			            	<div class="contactnamesbox"><p>First Name *</p>
+			            		<div class="inputs"><input type="text" name="firstname" required>
+			            		</div>
+			            	</div>
+			              	<div class="contactnamesbox"><p>Last Name *</p>
+			              		<div class="inputs"><input type="text" name="lastname" required>
+			              		</div>
+			              	</div>
 			            </div>
-			            <span id="contacts">E-mail Address *<br><input type="email" name="email" required id="inputbox"><br>
-			            Subject *<br><input type="text" name="subject" required id="inputbox"><br>
-			            Message *<br><textarea name="message" class="form-control" id="inputbox"></textarea><br>
-			            <input type="submit" name="submit" value="Submit" id="contactsubmit">
-			            <input type="reset" name="reset" id="contactsubmit"></span>
+
+			            <div class="contactnames">
+			            	<div class="contactnamesbox"><p>E-mail Address *</p>
+			            		<div class="inputs"><input type="email" name="email" required id="inputbox">
+			            		</div>
+			            	</div>
+			              	<div class="contactnamesbox"><p>Phone</p>
+			              		<div class="inputs"><input type="text" name="lastname" optional>
+			              		</div>
+			              	</div>
+			            </div>
+
+			            <div id="messagearea" class="contactnames">
+		            		<div class="contactnamesbox"><p>Message *</p>
+		            			<div id="messagearea" class="inputs"><textarea name="message" class="form-control" id="inputbox"></textarea>
+		            			</div>
+		            		</div>
+		            	</div>
+			            <div id="cateringsubmit" class="contactnames">
+			            	<button id="cateringsubmit1"><input type="submit" name="submit" value="Submit" id="cateringsubmitbutton"></button>
+			            	<button><input type="reset" name="reset" id="cateringsubmitbutton"></button>
+		            	</div>
 			          </form>
+				</div>
+			</div>
+			<!--CATERING FORM-->
+			<div class="cateringform">
+				<div class="cateringcontainer">
+					<h2 id="contactspanish">¿QUE TE PASA CALABAZA?</h2>
+					<p id="contactenglish">WHAT'S ON YOUR MIND?</p>
+					<div class="toggletitles">
+	            		<div class="titles2">
+	            			<h3 class="contacttitle">CONTACT US</h3>
+	            			<h3 id="contacttoggle" class="cateringtitle">CATERING INQUIRY</h3>
+	            		</div>
+	            	</div>
+
+			
+						
+					<form action="cateringform.php" target="_blank" method="POST">
+			            <div class="cateringnames">
+			             	<div class="cateringnamesbox"><p>First Name *</p>
+			             		<div class="inputs"><input type="text" name="firstname" required>
+			             		</div>
+			             	</div>
+			              	<div class="cateringnamesbox"><p>Last Name *</p>
+			              		<div class="inputs"><input type="text" name="lastname" required>
+			              		</div>
+			              	</div>
+			            </div>
+			            <div class="cateringnames">
+		            		<div class="cateringnamesbox"><p>Company (if applicable)</p>
+		            			<div class="inputs"><input type="text" name="company" optional>
+		            			</div>
+		            		</div>
+	            			<div class="cateringnamesbox"><p>E-mail Address *</p>
+	            				<div class="inputs"><input type="email" name="email" required>
+	            			</div>
+            				</div>
+	            		</div>
+		            	<div class="cateringnames">
+		            		<div class="cateringnamesbox"><p>Phone *</p>
+		            			<div class="inputs"><input type="text" name "phone">
+		            			</div>
+		            		</div>
+		            		<div class="cateringnamesbox"><p>Date *</p>
+		            			<div id="datevalue" class="inputs"><input type="text" name="date" placeholder="Month/Day/Year" required>
+		            			</div>
+		            		</div>
+		            	</div>
+		            	<div class="cateringnames">
+		            		<div class="cateringnamesbox"><p>Time *</p>
+		            			<div class="inputs"><input type="text" name="time">
+		            			</div>
+		            		</div>
+		            		<div class="cateringnamesbox"><p>Estimated Guest Count *</p>
+		            			<div class="inputs"><input type="number" name="guestcount" required><br>
+		            			</div>
+		            		</div>
+		            	</div>
+		            	<div id="messagearea" class="cateringnames">
+		            		<div class="cateringnamesbox"><p>Message *</p>
+		            			<div id="messagearea" class="inputs"><textarea name="message" class="form-control" id="inputbox1"></textarea>
+		            			</div>
+		            		</div>
+		            	</div>
+			            <div id="cateringsubmit" class="cateringnames">
+			            	<button id="cateringsubmit1"><input type="submit" name="submit" value="Submit" id="cateringsubmitbutton"></button>
+			            	<button><input type="reset" name="reset" id="cateringsubmitbutton"></button>
+		            	</div>
+			        </form>
 				</div>
 			</div>
 		</div>

@@ -16,6 +16,7 @@ html, body{
 	margin: 0;
 	overflow-x: hidden;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 li{
@@ -25,10 +26,20 @@ li{
 a{
 	text-decoration: none;
 }
-
-.mobiledropdown, #mobileheader, .mobilestory{
-	display: none;
-}
+/*DISPLAY NONE*/
+	.dropdownmenucontainer,
+	.mdropdown,
+	#mobileheader,
+	.mobilestory,
+	.cateringform,
+	.deliverymobileicon,
+	.mcontact,
+	.mcatering,
+	.msubmenu,
+	.mdelivery,
+	.minfo{
+		display: none;
+	}
 /*HEADER*/
 	.header{
 		background-color: #000;
@@ -51,7 +62,7 @@ a{
 		}
 		/*HEADER LEFT*/
 		.headerleft{
-			width: 50%;
+			width: 55%;
 		}
 		.headerleft ul{
 			align-items: center;
@@ -87,7 +98,7 @@ a{
 
 	/*DELIVERY DROPDOWN*/
 	.dropdownmenu{
-		margin-left: 50%;
+		margin-left: 53%;
 	}
 	.dropdownmenucontainer{
 		position: fixed;			
@@ -137,13 +148,13 @@ a{
 	}
 	.familycarousel img{
 		display: block;
-		min-width: 100%;
+		max-width: 509px;
 	}
 	/*ABOUT US INFO*/
 		.aboutuscontainer{
 			background-color: rgba(86,168,143,.9);
 			display: flex;
-			height: 670px;
+			height: 550px;
 			margin: 0 auto 0 auto;
 			padding: 25px 0 25px 0;
 			position: absolute;
@@ -160,21 +171,31 @@ a{
 		.ourstoryinfo{
 			align-items: center;
 			border: 8px dotted #fff;
-			justify-content: center;
+			justify-content: space-around;
 			display: flex;
 			flex-direction: column;
 		}
 		.ourstoryinfo h1{
 			color: #fff;
 			font-family: 'rye';
-			font-size: 2.8rem;
+			font-size: 36px;
 			margin: 0;
 			width: 80%;
 		}
 		.ourstoryinfo p{
 			color: #fff;
 			font-family: 'cooper';
+			margin: 0;
+			padding: 0;
 			width: 80%;
+		}
+		.story p,
+		.story h1{
+			margin: 0 auto;
+		}
+
+		.story h1{
+			padding-bottom: 10px;
 		}
 
 	/*OUR STORY INFO*/
@@ -183,7 +204,7 @@ a{
 			width: 50%;
 		}
 		.ourstoryimages img{
-			max-width: 450px;
+			max-width: 350px;
 		}
 /*INSTAFEED*/
 	.insta{
@@ -205,18 +226,17 @@ a{
 		#instafeed{
 			align-items: center;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
 			overflow-y: hidden;
 			padding: 40px 0;
 			width: 100%;
-			scrollbar-color: dark;
 		}
 
 		#instafeed img{
 			box-shadow: 5px 5px 5px #000;
 			display: block;
-			max-height: 320px;
-			max-width: 320px;
+			max-height: 300px;
+			max-width: 300px;
 			margin: 0 20px;
 			transition: ease-in-out;
 			transition-duration: .5s;
@@ -276,6 +296,7 @@ a{
 
 	.info h2{
 		font-family: 'rye';
+		font-size: 28px;
 		margin: 0;
 		padding-bottom: 10px;
 	}
@@ -326,70 +347,49 @@ a{
 		#locationbottom a:hover{
 			color: #ddb237;
 		}
-/*CONTACT*/
-
-	.contactnames, #contacts{
+/*CONTACT FORM*/
+	.contactnames{
 		color: #fff;
 		font-family: 'cooper';
 	}
-
-	.contact{
-		display: flex;
-		font-family: 'cooper';
-		font-size: 1.2rem;
-		margin: 150px auto;
-		width: 85%;
-	}
-
-	.contactinfo{
-		width: 50%;
-	}
-
 	.contactform{
 		width: 50%;
 	}
-
+	.titles2{
+		display: flex;
+		font-family: 'cooper';
+		justify-content: space-around;
+		margin: 0 auto 15px auto;
+		text-align: center;
+		width: 90%;
+	}
+	.titles2 h3{
+		margin: 0;
+	}
+	#contacttoggle{
+		border-bottom: 5px solid rgba(221, 178, 55);
+		padding-bottom: 2px;
+	}
+	.contacttitle:hover,
+	.cateringtitle:hover{
+		cursor: pointer;
+	}
 	.contactform h2{
 		text-align: center;
 	}
-
-	.contactinfocontainer{
-		width: 70%;
+	#contactspanish{
+		font-size: 36px;
+		padding: 0;
 	}
-
-	.contactinfocontainer h1{
-		margin: 0;
-	}
-
-	.contactinfocontainer p{
-		line-height: 1.5;
+	#contactenglish{
+		font-size: 24px;
+		padding-bottom: 10px;
+		text-align: center;
+		width: 100%;
 	}
 	.contactformcontainer{
 		margin: 0 auto;
 		text-align: left;
-	}
-
-	.contactnames{
-		display: flex;
-		justify-content: space-between;
-	}
-
-	.contactnamesbox{
-		display: flex;
-		flex-direction: column;
-		width: 48%;
-	}
-	.contactformcontainer form input, .contactformcontainer textarea{
-		background-color: rgba(86, 168, 143, 0.2);
-		color: #fff;
-		font-family: 'cooper';
-		font-size: 1.2rem;
-		margin-top: 5px;
-		padding: 10px 0 10px 10px;
-		width: 100%;
-	}
-	#inputbox{
-		margin-bottom: 20px;
 	}
 
 	#contactsubmit{
@@ -400,10 +400,85 @@ a{
 		transition: .5s ease-in-out;
 		width: 150px;
 	}
-
 	#contactsubmit:hover{
 		background-color: rgba(221, 178, 55);
 		border: 2px solid rgba(221, 178, 55);
+		color: #fff;
+		cursor: pointer;
+	}
+/*CATERING FORM*/
+	.cateringform{
+		text-align: center;
+		width: 50%;
+	}
+	.cateringnames,
+	.contactnames{
+		display: flex;
+		justify-content: space-between;
+	}
+	.cateringnamesbox,
+	.contactnamesbox{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.cateringenglish p,
+	.contactenglish p{
+		padding-bottom: 0;
+	}
+	.cateringnamesbox p,
+	.contactnamesbox p{
+		margin-top: 10px;
+		text-align: left;
+		width: 90%;
+	}
+	.inputs{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.inputs input{
+		width: 90%;
+	}
+	.cateringnames input,
+	.cateringnames textarea,
+	.contactnames input,
+	.contactnames textarea{
+		background-color: rgba(86, 168, 143, 0.2);
+		color: #fff;
+		font-family: 'cooper';
+		font-size: 1.2rem;
+		margin-top: 2px;
+		padding: 5px 0 0 10px;
+	}
+	#datevalue{
+		background-color: rgba(0,0,0,0.4);
+	}
+	#messagearea textarea{
+		width: 95%;
+	}
+	#messagearea p{
+		width: 95%;
+	}
+	#cateringsubmit{
+		justify-content: center;
+		margin: 20px 0 0 0;
+		width: 100%;
+	}
+	#cateringsubmit button{
+		background-color: rgba(86, 168, 143, 0.2);
+		margin: 0 30px 0 25px;
+		padding: 0;
+		transition: .5s ease-in-out;
+	}
+	#cateringsubmit input{
+		background-color: rgba(86, 168, 143, 0);
+		border: 0;
+		padding: 5px 20px;
+	}
+	#cateringsubmit button:hover{
+		background-color: rgba(221, 178, 55);
 		color: #fff;
 		cursor: pointer;
 	}
@@ -485,7 +560,8 @@ a{
 
 /***MOBILE PORTRAIT***/
 @media only screen and (max-device-width : 736px) and (orientation: portrait) {
-	.mobiledropdown, #mobileheader, .mobilestory{
+	#mobileheader,
+	.mobilestory{
 		display: block;
 	}
 
@@ -493,7 +569,7 @@ a{
 	.headerleft img, 
 	.ourstoryinfo, 
 	.info,
-	.mobiledropdown .contactform h2{
+	.mdropdown, .contactform h2{
 		display: none;
 	}
 	.headerleft{
@@ -501,82 +577,171 @@ a{
 	}
 	.headerleft i{
 		align-items: center;
-		font-size: 65px;
-		padding: 0;
+		font-size: 85px;
+		padding: 25px 0;
 	}
 
 
 	.headerright i{
-			font-size: 65px;
+			font-size: 85px;
 			padding: 10px 0 10px 30px;
 		}
 		/*MOBILE DROPDOWN*/
-		.mobiledropdown{
+		.mcontainer{
 			background-color: #000;
 			border: 8px solid rgb(86,168,143);
-			box-shadow: 10px 10px 15px #000;
+			box-shadow: 20px 30px 20px #000;
 			display: flex;
 			font-size: 45px;
 			left: 0;
 			padding: 20px 0 20px 20px;
 			position: absolute;
-			top: 85px;
+			top: 135px;
 			width: 50%;
 		}
-		.mobiledropdowncontainer, .contactform{
-			position: relative;
+		.mlist i{
+			padding-left: 10px;
 		}
-		.mobile96{
-			width: 96%;
+		.halfwidth{
+			width: 50%;
 		}
-
-		.mobile50{
-			width: 55%;
+		.fullwidth{
+			width: 96.3%;
 		}
-
-		.deliveryiconmobile{
-			display: flex;
-			width: 120%;
+		.mcontainer li{
+			font-size: 60px;
+			margin: 30px 0;
 		}
-
-		.mobiledropdown img{
-			display: block;
-			height: 100px;
-			margin-right: 10px;
-			width: 100px;
+		.msubmenu a{
+			font-size: 50px;
+			margin-left: 20px;
 		}
-
-		.mobiledropdownlist{
-			width: 100%;
-		}
-
-		.mobiledropdownlist li{
-			padding: 20px 0;
-		}
+		/*MOBILE DELIVERY*/
+			.mdelivery{
+				width: 100%;
+			}
+			.mdeliverycontainer{
+				display: flex;
+				width: 100%;
+			}
+			.mdelivery img{
+				display: block;	
+				height: 190px;
+				padding: 10px;
+				width: 190px;
+			}
 		/*MOBILE HOURS*/
-		.mobilehours{
-			color: #fff;
-			padding-left: 20px;
-		}
+			.mlocation,
+			.mhours{
+				color: #fff;
+			}
+			.mlocation p,
+			.mhours p{
+				font-family: 'cooper';
+				margin: 0;
+			}
+			.minfo{
+				width: 100%;
+			}
+			.minfocontainer{
+				margin: 0 auto;
+				text-align: center;
+				width: 85%;
+			}
+			.mlocation{
+				margin: 40px 0;
+			}
+			.mlocation i{
+				padding: 0;
+			}
+			.mlocation p{
+				font-size: 48px;
+			}
+			#mlocationbottom{
+				font-size: 36px;
+				margin: 30px 0;
+			}
+			.mhours{
+				font-size: 50px;
+			}
+		/*MOBILE CONTACT*/
+			.mcontact,
+			.mcatering{
+				right: 0;
+				width: 50%;
+			}
+			.mcontactcontainer,
+			.mcateringcontainer{
+				align-items: center;
+				color: #fff;
+				display: flex;
+				justify-content: flex-end;
+				font-family: 'cooper';
+				width: 100%;
+			}
+			.mcontactnames,
+			.mcateringnames{
+				text-align: center;
+			}
+			.mcateringnames p{
+				font-size: 38px;
+				margin: 0;
+			}
+			.mcontact p,
+			.mcarering p{
+				margin: 0;
+			}
+			.minputs,
+			.minputs input,
+			.minputs textarea,
+			.mcateringnames textarea{
+				font-size: 36px;
+				margin: 0 auto 10px 0;
+				padding: 2px 0 2px 2px;
+				width: 100%;
+			}
+			.mwipe input{
+				margin-bottom: 0;
+			} 
+			#mcateringsubmit{
+				justify-content: center;
+				margin: 20px 0 0 0;
+				width: 100%;
+			}
+			#mcateringsubmit button{
+				background-color: rgba(86, 168, 143, 0.2);
+				margin: 0 30px 0 25px;
+				padding: 0;
+				transition: .5s ease-in-out;
+			}
+			#mcateringsubmit input{
+				background-color: rgba(86, 168, 143, 0);
+				border: 0;
+				color: #fff;
+				font-size: 40px;
+				padding: 5px 20px;
+			}
+	/*JUMBOTRON*/
+	.jumbologo{
+		max-width: 600px;
+		padding-top: 170px;
+	}
+	.jumbologo img{
 
-		.mobilehours h2,
-		.mobilelocation h2{
-			font-size: 40px;
-		}
-		.mobilehours p{
-			font-family: 'cooper';
-			font-size: 30px;
-		}
-
-		.mobiledropdown i{
-			font-size: 40px;
-			padding: 0;
-		}
+	}
 	/*ABOUT US*/
+	.aboutuscontainer{
+		height: 775px;
+	}
+	.family img{
+		min-width: 700px;
+	}
 	.ourstoryimages{
 		width: 100%;
 	}
-
+	.ourstoryimages img{
+		min-width: 500px;
+	}
 	.mobilestory{
 		background-image: url("../media/images/painting3dark.png");
 		background-repeat: no-repeat;
@@ -594,68 +759,20 @@ a{
 	.mobilestory h1{
 		color: #fff;
 		font-family: 'rye';
+		font-size: 100px;
 		margin: 0;
-		padding-bottom: 20px;
+		padding-bottom: 30px;
 	}
 	.mobilestory p{
 		color: #fff;
 		font-family: 'cooper';
+		font-size: 60px;
 		margin: 0 auto;
 		width: 90%;
 	}
-	/*CONTACT*/
-	.mobiledropdown .contactnames, .mobiledropdown #contacts{
-		color: #fff;
-		font-family: 'cooper';
-	}
-	.mobiledropdown .contactform{
-		padding: 20px 0;
-		right: 0;
-	}
+	
 
-	.mobiledropdown .contactnames{
-		display: block;
-	}
-
-	.mobiledropdown .contactnames input{
-		margin-bottom: 20px;
-	}
-
-	.mobiledropdown .contactnamesbox{
-		display: block;
-		width: 80%;
-	}
-
-	.mobiledropdown #contacts input,
-	.mobiledropdown #inputbox{
-		width: 80%;
-	}
-
-	.contactnamesbox{
-		display: flex;
-		flex-direction: column;
-		width: 48%;
-	}
-	.contactformcontainer form input, .contactformcontainer textarea{
-		background-color: rgba(86, 168, 143, 0.2);
-		color: #fff;
-		font-family: 'cooper';
-		font-size: 1.2rem;
-		margin-top: 5px;
-		padding: 10px 0 10px 10px;
-		width: 100%;
-	}
-	#inputbox{
-		margin-bottom: 20px;
-	}
-
-	.mobiledropdown #contactsubmit{
-		font-size: 32px;
-		margin-bottom: 20px;
-		max-width: 85%;
-	}
-
-	/*INSTAGRAM*/
+/*INSTAGRAM*/
 	.instabox{
 		width: 40%;
 	}
