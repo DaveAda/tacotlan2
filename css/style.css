@@ -505,7 +505,7 @@ a{
 	}
 
 /*media query rules for nav*/
-	@media(max-width:860px){
+@media(max-width:1100px){
 		.header img{
 			height: 33px;
 			width:50px;
@@ -518,45 +518,408 @@ a{
 			font-size:20px;
 		}
 	}
+@media(max-width: 930px){
+	.ourstoryinfo{
+		display: none;
+	}
+	.mobilestory{
+		background-image: url("../media/images/painting3dark.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
+		padding: 20px 0;
+		text-align: center;
+	}
 
-	@media(max-width:640px){
+	.mobilestorycontainer{
+		border: 8px dotted #fff;
+		padding: 20px 0;
+		margin: 0 20px;
+	}
 
-		body{
-			padding-top:105px;
+	.mobilestory h1{
+		color: #fff;
+		font-family: 'rye';
+		font-size: 60px;
+		margin: 0;
+		padding-bottom: 30px;
+	}
+	.mobilestory p{
+		color: #fff;
+		font-family: 'cooper';
+		font-size: 30px;
+		margin: 0 auto;
+		width: 90%;
+	}
+	.ourstoryimages{
+		width: 100%;
+	}
+	}
+
+@media(max-width: 870px){
+	.mdropdown{
+		display: none;
+	}
+	.instabox img{
+		width: 70%;
+	}
+	.instabox h2{
+		font-size: 1.3em;
+	}
+}
+@media(max-width: 800px){
+	/*FOOTER*/
+	.footercontainer{
+		align-items: center;
+		flex-direction: column;
+	}
+	.footer img{
+		margin-bottom: 5px;
+		width: 20%;
+	}
+	.footer p{
+		margin: 5px 0;
+	}
+}
+@media(max-width: 760px){
+		.headerleft a,
+		.info{
+			display: none;
 		}
-
-		.headercontainer,
-		.headerleft,
-		.headerright{
+		#mobileheader{
 			display: block;
+			font-size: 40px;
+			padding: 10px 0 0 0;
 		}
-
-		.headerleft{
-			margin:0 auto;
+		.headerright i{
+			font-size: 40px;
+			margin: 10px 0;
 		}
-
-		.headerleft ul,
-		.headerright ul{
-			justify-content: center;
+		.jumbologo{
+			width: 80%;
 		}
-
-		.headerright{
+		/*DROPDOWN*/
+		.mdropdown{
 			position: absolute;
-			top:0;
-			right:0;
+			top: 60px;
 		}
-		
-		.headerright a{
-			padding:5px 5px;
+		.mcontainer{
+			background-color: #000;
+			border: 8px solid rgb(86,168,143);
+			box-shadow: 20px 30px 20px #000;
+			display: flex;
+			justify-content: space-around;
+			left: 0;
+			padding: 10px 0;
+			position: ;
+			top: 60px;
+			width: 100%;
 		}
+		.mlist{
+			width: 255px;
+		}
+		.mlist i{
+			padding-left: 10px;
+		}
+		.mlist br{
+			display: none;
+		}
+		.halfwidth{
+			width: 50%;
+		}
+		.fullwidth{
+			width: 100%;
+		}
+		.mcontainer li{
+			font-size: 30px;
+			margin: 10px 0;
+		}
+		.msubmenu a{
+			font-size: 20px;
+			margin-left: 20px;
+		}
+		/*MOBILE DELIVERY*/
+			.mdelivery{
+				width: 100%;
+			}
+			.mdeliverycontainer{
+				display: flex;
+				width: 100%;
+			}
+			.mdelivery img{
+				display: block;	
+				height: 100px;
+				padding: 10px;
+				width: 100px;
+			}
+		/*MOBILE HOURS*/
+			.mlocation,
+			.mhours{
+				color: #fff;
+			}
+			.mlocation p,
+			.mhours p{
+				font-family: 'cooper';
+				margin: 0;
+			}
+			.minfo{
+				width: 100%;
+			}
+			.minfocontainer{
+				margin: 0 auto;
+				text-align: center;
+				width: 85%;
+			}
+			.mlocation{
+				margin: 40px 0;
+			}
+			.mlocation i{
+				padding: 0;
+			}
+			.mlocation p{
+				font-size: 48px;
+			}
+			#mlocationbottom{
+				font-size: 36px;
+				margin: 30px 0;
+			}
+			.mhours{
+				font-size: 50px;
+			}
+			.minfo{
+				width: 410px;
+			}
+			.minfocontainer{
+				margin: 0 auto;
+			}
+			.mlocation p{
+				font-size: 28px;
+			}
+			#mlocationbottom{
+				font-size: 24px;
+				margin: 30px 0;
+			}
+		/*MOBILE CONTACT*/
+			
+			.mcatering{
+				right: 0;
+				margin-top: 30px;
+				width: 50%;
+			}
+			.mcontact{
+				width: 300px;
+			}
+			.mcateringcontainer{
+				align-items: center;
+				color: #fff;
+				display: flex;
+				justify-content: center;
+				font-family: 'cooper';
+				width: 100%;
+			}
+			.mcontactcontainer{
+				color: #fff;
+				font-family: 'cooper';
+			}
+			.mlist li{
+				font-size: 24px;
+			}
+			.msubmenu a{
+				font-size: 16px;
+			}
+			.mcateringnames{
+				display: flex;
+			}
+			.mcontactnames,
+			.mcateringnames{
+				text-align: center;
+			}
+			.mcateringnames p{
+				font-size: 18px;
+				margin: 0;
+			}
+			.mcontactnames p{
+				font-size: px;
+			}
+			.mcontact p,
+			.mcarering p{
+				margin: 0;
+			}
+			
+			.minputs input,
+			.minputs textarea{
+				font-size: 18px;
+				margin: 0 0 10px 0;
+				padding: 2px 0 2px 2px;
+			}
+			.mcateringnamesbox{
+				width: 100%;
+			}
+			.mcateringnamesbox textarea{
+				font-size: 18px;
+				margin-left: 2%;
+				padding: 2px 0 2px 2px;
+				width: 100%;
+			}
+			#mcateringsubmit{
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0;
+				width: 100%;
+			}
+			#mcateringsubmit button{
+				background-color: rgba(86, 168, 143, 0.2);
+				margin: 0 auto;
+				padding: 5px;
+				transition: .5s ease-in-out;
+				width: 50%;
+			}
+			#mcateringsubmit input{
+				background-color: rgba(86, 168, 143, 0);
+				border: 0;
+				color: #fff;
+				font-size: 16px;
+				padding: 0;
+			}
+			#mcateringsubmit button:hover{
+				background-color: rgba(221, 178, 55);
+				color: #000;
+				cursor: pointer;
+			}
 
-		.headerleft img{
-			
-			
-			width:80%;
-			
+			button#mcontactreset{
+				margin-top: 10px;
+			}
 		}
 	}
+@media(max-width: 680px){
+	.instabox h2{
+		font-size: 1em;
+	}
+}
+@media(max-width: 630px){
+	.mcontainer{
+		padding: 0 10px;
+		width: 50%;
+	}
+	.mlist{
+		margin-right: 20px;
+	}
+	.mlist li{
+		font-size: 18px;
+	}
+	.msubmenu a{
+		font-size: 14px;
+	}
+	.mobilestory h1{
+		color: #fff;
+		font-family: 'rye';
+		font-size: 40px;
+		margin: 0;
+		padding-bottom: 30px;
+	}
+	.mobilestory p{
+		color: #fff;
+		font-family: 'cooper';
+		font-size: 20px;
+		margin: 0 auto;
+		width: 90%;
+	}
+	/*CONTACT*/
+	.mcontact,
+	.mcatering{
+		margin: 20px 20px 20px 0;
+		width: 320px;
+	}
+	.mcontact p,
+	.mcontact input,
+	.mcontact textarea{
+		font-size: 16px;
+	}
+	.mcontact input,
+	.mcontact textarea{
+		width: 100%;
+	}
+	.mdelivery img{
+		height: 50px;
+		width: 50px;
+	}
+	.msubmit5{
+		flex-direction: column;
+	}
+	#mcateringsubmit{
+		margin: 0;
+	}
+	.mcontactnames#mmessagearea{
+		width:101%;
+	}
+	.mcateringnames#mmessagearea{
+		width: 94%;
+	}
+	input#mcateringsubmitbutton{
+		font-size: 14px;
+		padding: 10px 0;
+	}
+	button#mcateringsubmit1{
+		width: 100%;
+	}
+	button#mcontactreset,
+	button#mcateringreset{
+		margin-top: 10px;
+		width: 100%;
+	}
+	/*CATERING*/
+	.mcateringnames{
+		flex-direction: column;
+	}
+	.mcateringnames input{
+		margin-bottom: 2px;
+	}
+	.mcatering textarea{
+		margin-bottom: 10px;
+	}
+	/*INFO*/
+	.minfo{
+		width: 340px;
+	}
+	.mlocation{
+		margin: 20px 0 0 0;
+	}
+	#mlocationbottom{
+		margin: 15px 0;
+	}
+	.minfo p{
+		font-size: 16px;
+	}
+	.mhours{
+		margin-bottom: 15px;
+	}
+	.mhours p{
+		line-height: 1.5;
+	}
+	.mcatering p,
+	.mcatering input{
+		font-size: 14px;
+	}
+	/*FOOTER*/
+	.footercontainer{
+		align-items: center;
+		flex-direction: column;
+	}
+	.footer img{
+		margin-bottom: 5px;
+		width: 20%;
+	}
+	.footer p{
+		margin: 5px 0;
+	}
+}
+@media(max-width: 530px){
+	.instabox h2{
+		font-size: .5em;
+	}
+}
 
 /***MOBILE PORTRAIT***/
 @media only screen and (max-device-width : 736px) and (orientation: portrait) {
@@ -564,7 +927,6 @@ a{
 	.mobilestory{
 		display: block;
 	}
-
 	.headerleft li, 
 	.headerleft img, 
 	.ourstoryinfo, 
@@ -580,12 +942,10 @@ a{
 		font-size: 85px;
 		padding: 25px 0;
 	}
-
-
 	.headerright i{
-			font-size: 85px;
-			padding: 10px 0 10px 30px;
-		}
+		font-size: 85px;
+		padding: 10px 0 10px 30px;
+	}
 		/*MOBILE DROPDOWN*/
 		.mcontainer{
 			background-color: #000;
@@ -725,9 +1085,6 @@ a{
 	.jumbologo{
 		max-width: 600px;
 		padding-top: 170px;
-	}
-	.jumbologo img{
-
 	}
 	/*ABOUT US*/
 	.aboutuscontainer{
