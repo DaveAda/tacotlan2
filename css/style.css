@@ -648,9 +648,9 @@ a{
 			}
 			.mdelivery img{
 				display: block;	
-				height: 100px;
+				height: 75px;
 				padding: 10px;
-				width: 100px;
+				width: 75px;
 			}
 		/*MOBILE HOURS*/
 			.mlocation,
@@ -670,24 +670,22 @@ a{
 				text-align: center;
 				width: 85%;
 			}
-			.mlocation{
-				margin: 40px 0;
-			}
 			.mlocation i{
 				padding: 0;
 			}
 			.mlocation p{
-				font-size: 48px;
+				font-size: 24px;
 			}
 			#mlocationbottom{
-				font-size: 36px;
+				font-size: 18px;
 				margin: 30px 0;
 			}
 			.mhours{
-				font-size: 50px;
+				font-size: 24px;
 			}
 			.minfo{
-				width: 410px;
+				margin: 10px 0;
+				width: 300px;
 			}
 			.minfocontainer{
 				margin: 0 auto;
@@ -703,10 +701,11 @@ a{
 			
 			.mcatering{
 				right: 0;
-				margin-top: 30px;
-				width: 50%;
+				margin-top: 10px;
+				width: 300px;
 			}
 			.mcontact{
+				margin-top: 10px;
 				width: 300px;
 			}
 			.mcateringcontainer{
@@ -729,17 +728,15 @@ a{
 			}
 			.mcateringnames{
 				display: flex;
+				flex-direction: column;
 			}
 			.mcontactnames,
 			.mcateringnames{
 				text-align: center;
 			}
 			.mcateringnames p{
-				font-size: 18px;
+				font-size: 16px;
 				margin: 0;
-			}
-			.mcontactnames p{
-				font-size: px;
 			}
 			.mcontact p,
 			.mcarering p{
@@ -748,18 +745,18 @@ a{
 			
 			.minputs input,
 			.minputs textarea{
-				font-size: 18px;
-				margin: 0 0 10px 0;
+				font-size: 16px;
+				margin: 0 0 2px 0;
 				padding: 2px 0 2px 2px;
 			}
 			.mcateringnamesbox{
 				width: 100%;
 			}
 			.mcateringnamesbox textarea{
-				font-size: 18px;
-				margin-left: 2%;
+				font-size: 16px;
+				margin-left: 1%;
 				padding: 2px 0 2px 2px;
-				width: 100%;
+				width: 96%;
 			}
 			#mcateringsubmit{
 				display: flex;
@@ -773,7 +770,7 @@ a{
 				margin: 0 auto;
 				padding: 5px;
 				transition: .5s ease-in-out;
-				width: 50%;
+				width: 60%;
 			}
 			#mcateringsubmit input{
 				background-color: rgba(86, 168, 143, 0);
@@ -787,8 +784,12 @@ a{
 				color: #000;
 				cursor: pointer;
 			}
-
-			button#mcontactreset{
+			.mcatering button#mcateringsubmit1,
+			.mcatering button#mcateringreset{
+				width: 98%;
+			}
+			button#mcontactreset,
+			button#mcateringreset{
 				margin-top: 10px;
 			}
 		}
